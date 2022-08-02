@@ -28,10 +28,6 @@ typedef struct employee {
 
 } Employee;
 
-typedef struct {
-
-} A;
-
 int main() {
     Employee employee = {1, "teste", 3.0f, {1, "teste"}, {2, "testerole"}};
 
