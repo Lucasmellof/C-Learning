@@ -5,18 +5,12 @@
 * @author Lucasmellof, Lucas de Mello Freitas created on 02/08/2022
 */
 
-struct address {
-    char logradouro[50];
-    int numero;
-    char cidade[30];
-    char estado[2];
-} end1;
-
 int main() {
-
-    printf("%G\n",0.1f);
-    printf("%g",1230.10001f);
-
-
-    return 0;
+    int x, *y, z;
+    x = 5;
+    y = &x;
+    z = 10;
+    scanf("%d", y);
+    printf("%d %d ", x, z);
+    return 1;
 }
