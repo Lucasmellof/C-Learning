@@ -13,9 +13,10 @@ struct address {
 } end1;
 
 int main() {
-    struct address *tes = {"aa", 1, "Sampa", "SP"};
 
-    strcpy(tes->estado, "RJ");
+    printf("%G\n",0.1f);
+    printf("%g",1230.10001f);
+
 
     return 0;
 }
