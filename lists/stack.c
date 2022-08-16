@@ -46,7 +46,7 @@ int main() {
     stack.top = NULL;
 
     do {
-        printf("1 - Pushed value to Stack\n2 - Pop433333333 value from Stack\n3 - Print Stack\n4 - Leave\n");
+        printf("1 - Pushed value to Stack\n2 - Pop value from Stack\n3 - Print Stack\n4 - Leave\n");
         scanf("%d", &option);
         switch (option) {
             case 1:
