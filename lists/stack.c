@@ -15,14 +15,14 @@ typedef struct {
     int size;
 } Stack;
 
-void pop(Stack *stack, int value) {
+void push(Stack *stack, int value) {
     Node *node = malloc(sizeof(Node));
     node->value = value;
     node->next = stack->top;
     stack->top = node;
 }
 
-Node *push(Stack *stack) {
+Node *pop(Stack *stack) {
     Node *node = NULL;
     if (stack->top) {
         node = stack->top;
@@ -46,18 +46,18 @@ int main() {
     stack.top = NULL;
 
     do {
-        printf("1 - Pop value to Stack\n2 - Push value from Stack\n3 - Print Stack\n4 - Leave\n");
+        printf("1 - Pushed value to Stack\n2 - Pop433333333 value from Stack\n3 - Print Stack\n4 - Leave\n");
         scanf("%d", &option);
         switch (option) {
             case 1:
-                printf("Value to be popped: ");
+                printf("Value to be pushed: ");
                 scanf("%d", &value);
-                pop(&stack, value);
+                push(&stack, value);
                 break;
             case 2:
-                node = push(&stack);
+                node = pop(&stack);
                 if (node) {
-                    printf("Pushed value: %d\n", node->value);
+                    printf("Popped value: %d\n", node->value);
                 }
                 break;
             case 3:
