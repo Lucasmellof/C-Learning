@@ -3,4 +3,4 @@ project(Facul C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(Facul tests.c)
+add_executable(Facul lists/list1.c)
